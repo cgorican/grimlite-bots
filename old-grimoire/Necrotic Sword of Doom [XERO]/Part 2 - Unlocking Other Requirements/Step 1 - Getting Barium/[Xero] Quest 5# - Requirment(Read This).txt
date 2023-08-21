@@ -1,0 +1,4 @@
+You must have 100 spirit orbs in inventory
+to finish this quest, if you do not have
+100 spirit orbs in your inventory, it will
+automatically stop

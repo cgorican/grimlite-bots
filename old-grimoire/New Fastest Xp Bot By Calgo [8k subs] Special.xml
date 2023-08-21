@@ -1,0 +1,8 @@
+<autoer>
+  <packet>%xt%zm%getQuests%348456%5301%</packet>
+  <packet>%xt%zm%acceptQuest%348456%5301%</packet>
+  <packet>%xt%zm%getMapItem%346749%4680%</packet>
+  <packet>%xt%zm%tryQuestComplete%346749%5301%-1%false%wvz%</packet>
+  <author>Lets gouuuuu</author>
+  <spamspeed>200</spamspeed>
+</autoer>
