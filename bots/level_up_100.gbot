@@ -16,6 +16,14 @@
         "Y": "309"
       },
       {
+        "$type": "Grimoire.Botting.Commands.Item.CmdUseBoost, Grimoire",
+        "ItemName": "Daily Login XP Boost! (20 min)"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+        "ItemName": "LightCaster"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
         "Name": "LIGHTCASTER"
       },
@@ -23,7 +31,7 @@
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
         "ItemName": "level up",
-        "Quantity": "*"
+        "Quantity": "100"
       }
     ]
   },
