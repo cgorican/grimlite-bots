@@ -28,6 +28,10 @@
         "Monster": "*"
       },
       {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 1500
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
         "QuestID": "2209"
       },
