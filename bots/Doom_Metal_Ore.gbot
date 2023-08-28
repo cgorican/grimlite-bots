@@ -35,7 +35,7 @@
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
         "ItemName": "Doom Metal Ore",
-        "Quantity": "100"
+        "Quantity": "200"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",

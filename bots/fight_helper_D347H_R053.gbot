@@ -5,43 +5,54 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "xancave",
-        "Room": "1",
-        "Cell": "r6",
-        "Pad": "Down"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
-        "QuestID": "2209"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r11",
+        "Map": "underlair",
+        "Room": "7777",
+        "Cell": "r5",
         "Pad": "Right"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "VH"
+        "Name": "ARCH PALADIN"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerInCombat, Grimoire",
+        "Tag": "Player",
+        "Text": "Player is in combat",
+        "Value1": "D347H_R053",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "BATTLE"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "WAIT"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 1500
+        "Delay": 500
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
-        "QuestID": "2209"
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerNotInCombat, Grimoire",
+        "Tag": "Player",
+        "Text": "Player is not in combat",
+        "Value1": "D347H_R053",
+        "Value2": ""
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r6",
-        "Pad": "Down"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "WAIT"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "BATTLE"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "HELP",
+        "Quantity": "*"
       }
     ]
   },
@@ -50,64 +61,33 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[VH]",
+        "Text": "[ARCH PALADIN]",
         "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
+        "Text": "2: Hymn of Light",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Commandment",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Highlord's Gaze",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 100
+        "Text": "2: Hymn of Light",
+        "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Unshackle",
+        "Text": "3: Righteous Seal",
         "Index": "3"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Armageddon",
+        "Text": "4: Sacred Magic: Eden",
         "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Highlord's Gaze",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Unshackle",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Highlord's Gaze",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Unshackle",
-        "Index": "3"
       }
     ]
   },
@@ -123,9 +103,7 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Shurpu Blaze Token"
-    ]
+    "$values": []
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
@@ -136,17 +114,12 @@
     "sIP": "twilly.aqw.aq.com"
   },
   "SkillDelay": 100,
-  "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
-  "EnableRejection": true,
   "RelogDelay": 5000,
   "BotDelay": 10,
-  "WaitForAllSkills": true,
-  "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
-  "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
   "WalkSpeed": 8,
@@ -159,9 +132,7 @@
   "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Shurpu Blaze Token"
-    ]
+    "$values": []
   },
   "RelogUponQuestFailure": true,
   "RelogUponItemBuyFailure": true
