@@ -1,0 +1,524 @@
+{
+  "$type": "Grimoire.Botting.Configuration, Grimoire",
+  "Commands": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
+    "$values": [
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdBotDelay2, Grimoire",
+        "Delay": "1000"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdChange, Grimoire",
+        "Text": "TGBots"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdClientMessage, Grimoire",
+        "Messages": "Blade of Awe by TGBots. tgbotsaqw.blogspot.com"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Change it to 1 for public room"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdSetVar, Grimoire",
+        "Tag": "Misc",
+        "Text": "Set Variable",
+        "Value1": "Room No.",
+        "Value2": "1e99"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "CHECK"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is in inventory",
+        "Value1": "Blade of Awe",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "Blade of Awe Rep"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Legendary Stonewrit",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Legendary Handle",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "2"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Legendary Hilt",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "3"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Legendary Blade",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "4"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Legendary Runes",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "5"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "Blade of Awe"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2933
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "lair",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "End",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Stonewrit Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "2933",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2933
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "2"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "gilead",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2934
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "r3",
+        "Pad": "Right"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Handle Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "2934",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "2"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2934
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "3"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2935
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "castleundead",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Bright",
+        "Pad": "Right"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Hilt Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "2935",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "3"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2935
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "4"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2936
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "hydra",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Boss",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Blade Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "2936",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "4"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2936
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "5"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2937
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "talkypalooza",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Act11",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Runes Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "2937",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "5"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 2937
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "CHECK"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Blade of Awe"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "museum",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "630"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%buyItem%187284%17585%630%1819%1%\n",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLogout, Grimoire"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Blade of Awe Rep"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "castleundead",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "2935"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Bright",
+        "Pad": "Right"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Kill rep"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "*"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "2935",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "Kill rep"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "2935"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Check Rep"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdFactionRankLessThan, Grimoire",
+        "Tag": "This player",
+        "Text": "Faction Rank is less than",
+        "Value1": "Blade of Awe",
+        "Value2": "10"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "BLADE OF AWE REP"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Blade of Awe & rank 10 done. Visit tgbotsaqw.blogspot.com for more bots!"
+      }
+    ]
+  },
+  "Skills": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Skill, Grimoire]], mscorlib",
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Shackle",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Highlord's Gaze",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Unshackle",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Armageddon",
+        "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Potions",
+        "Index": "5"
+      }
+    ]
+  },
+  "Quests": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
+    "$values": []
+  },
+  "Author": "Author",
+  "Description": "Description (in Rich Text Format)",
+  "Boosts": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.InventoryItem, Grimoire]], mscorlib",
+    "$values": []
+  },
+  "Drops": {
+    "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+    "$values": [
+      "Stonewrit Found!",
+      "Legendary Stonewrit",
+      "Handle Found!",
+      "Legendary Handle",
+      "Hilt Found!",
+      "Legendary Hilt",
+      "Blade Found!",
+      "Legendary Blade",
+      "Runes Found!",
+      "Legendary Runes"
+    ]
+  },
+  "Server": {
+    "$type": "Grimoire.Game.Data.Server, Grimoire",
+    "iMax": 1000,
+    "sName": "Twilly",
+    "sLang": "xx",
+    "iPort": 5588,
+    "sIP": "twilly.aqw.aq.com"
+  },
+  "ExitCombatBeforeRest": true,
+  "ExitCombatBeforeQuest": true,
+  "EnablePickup": true,
+  "AutoRelogin": true,
+  "RelogDelay": 5000,
+  "BotDelay": 1000,
+  "SkipDelayIndexIf": true,
+  "InfiniteAttackRange": true,
+  "WalkSpeed": 8,
+  "NotifyUponDrop": {
+    "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+    "$values": []
+  },
+  "RestMp": 60,
+  "RestHp": 60,
+  "RestartUponDeath": true,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+    "$values": [
+      "Handle Found!",
+      "Legendary Handle",
+      "Hilt Found!",
+      "Stonewrit Found!",
+      "Legendary Stonewrit",
+      "Legendary Hilt",
+      "Blade Found!",
+      "Legendary Blade",
+      "Runes Found!",
+      "Legendary Runes"
+    ]
+  },
+  "DropDelay": 500
+}

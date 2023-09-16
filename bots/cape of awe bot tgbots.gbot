@@ -1,0 +1,264 @@
+{
+  "$type": "Grimoire.Botting.Configuration, Grimoire",
+  "Commands": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
+    "$values": [
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdBotDelay2, Grimoire",
+        "Delay": "1000"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdChange, Grimoire",
+        "Text": "TGBots"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdClientMessage, Grimoire",
+        "Messages": "Cape of Awe  by TGBots. tgbotsaqw.blogspot.com"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Change it to 1 for public room"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdSetVar, Grimoire",
+        "Tag": "Misc",
+        "Text": "Set Variable",
+        "Value1": "Room No.",
+        "Value2": "1e99"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Check"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is in inventory",
+        "Value1": "Cape of Awe",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Cape of Awe done! Visit tgbotsaqw.blogspot.com for more bots!"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdFactionRankGreaterThan, Grimoire",
+        "Tag": "This player",
+        "Text": "Faction Rank is greater than",
+        "Value1": "Blade of Awe",
+        "Value2": "9"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "Armor of Awe Pass"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Armor of Awe Pass"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "museum",
+        "Room": "[Room No.]",
+        "Cell": "Crossroad",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%loadShop%26490%1130%\n",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%buyItem%26490%29404%1130%18579%1%",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Armor of Awe Pass",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLogout, Grimoire"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Cape of Awe Quest"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "4180"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "doomvault",
+        "Room": "[Room No.]",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdCellIsNot, Grimoire",
+        "Tag": "Map",
+        "Text": "Cell is not",
+        "Value1": "r5 Left",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "r5",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "Kill"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "*"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest can not be turned in",
+        "Value1": "4180",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "Kill"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "museum",
+        "Room": "[Room No.]",
+        "Cell": "Crossroad",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "4180"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%loadShop%26851%1129%\n",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%buyItem%27315%29401%1129%3275%1%",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "r1",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%loadShop%26851%1129%\n",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%buyItem%27315%29375%1129%3277%1%\n",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Cape of Awe",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLogout, Grimoire"
+      }
+    ]
+  },
+  "Skills": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Skill, Grimoire]], mscorlib",
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Shackle",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Highlord's Gaze",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Unshackle",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Armageddon",
+        "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "Potions",
+        "Index": "5"
+      }
+    ]
+  },
+  "Quests": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
+    "$values": []
+  },
+  "Author": "Author",
+  "Description": "Description (in Rich Text Format)",
+  "Boosts": {
+    "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.InventoryItem, Grimoire]], mscorlib",
+    "$values": []
+  },
+  "Drops": {
+    "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+    "$values": [
+      "Cape Fragment",
+      "Cape Shard"
+    ]
+  },
+  "Server": {
+    "$type": "Grimoire.Game.Data.Server, Grimoire",
+    "iMax": 1000,
+    "sName": "Twilly",
+    "sLang": "xx",
+    "iPort": 5588,
+    "sIP": "twilly.aqw.aq.com"
+  },
+  "ExitCombatBeforeRest": true,
+  "ExitCombatBeforeQuest": true,
+  "EnablePickup": true,
+  "AutoRelogin": true,
+  "RelogDelay": 5000,
+  "BotDelay": 1000,
+  "SkipDelayIndexIf": true,
+  "InfiniteAttackRange": true,
+  "SkipCutscenes": true,
+  "WalkSpeed": 8,
+  "NotifyUponDrop": {
+    "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+    "$values": []
+  },
+  "RestMp": 60,
+  "RestHp": 60,
+  "RestartUponDeath": true,
+  "Items": {
+    "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
+    "$values": [
+      "Cape Fragment"
+    ]
+  },
+  "DropDelay": 500
+}
