@@ -4,55 +4,45 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "underlair",
-        "Room": "7777",
-        "Cell": "r5",
-        "Pad": "Right"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
+        "Name": "SS"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "ARCH PALADIN"
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdSetVar, Grimoire",
+        "Tag": "Misc",
+        "Text": "Set Variable",
+        "Value1": "Target",
+        "Value2": "Chrt1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "REPEAT"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerIsNotInMyCell, Grimoire",
+        "Tag": "Player",
+        "Text": "Player is not in my cell",
+        "Value1": "[Target]",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoPlayer, Grimoire",
+        "PlayerName": "[Target]"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerInCombat, Grimoire",
         "Tag": "Player",
         "Text": "Player is in combat",
-        "Value1": "D347H_R053",
+        "Value1": "[Target]",
         "Value2": ""
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "BATTLE"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "WAIT"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 500
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerNotInCombat, Grimoire",
-        "Tag": "Player",
-        "Text": "Player is not in combat",
-        "Value1": "D347H_R053",
-        "Value2": ""
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "*"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "WAIT"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "BATTLE"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "*",
-        "ItemName": "HELP",
-        "Quantity": "*"
+        "Label": "REPEAT"
       }
     ]
   },
@@ -61,13 +51,8 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[ARCH PALADIN]",
+        "Text": "[SS]",
         "Type": 2
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
-        "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
@@ -107,22 +92,28 @@
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1000,
-    "sName": "Twilly",
-    "sLang": "xx",
+    "iMax": 1500,
+    "sName": "Yorumi",
+    "sLang": "en",
     "iPort": 5588,
-    "sIP": "twilly.aqw.aq.com"
+    "sIP": "yorumi.aqw.aq.com"
   },
-  "SkillDelay": 100,
+  "SkillDelay": 1250,
+  "ExitCombatBeforeRest": true,
+  "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
+  "AutoRelogin": true,
   "RelogDelay": 5000,
-  "BotDelay": 10,
+  "RelogRetryUponFailure": true,
+  "BotDelay": 1700,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
+  "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
-  "WalkSpeed": 8,
+  "WalkSpeed": 12,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
@@ -134,6 +125,6 @@
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
   },
-  "RelogUponQuestFailure": true,
-  "RelogUponItemBuyFailure": true
+  "AFK": true,
+  "DropDelay": 3000
 }

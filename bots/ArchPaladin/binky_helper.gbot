@@ -5,29 +5,24 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "icestormunder",
-        "Room": "1",
-        "Cell": "r2",
-        "Pad": "Top"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdWalk, Grimoire",
-        "X": "451",
-        "Y": "309"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Item.CmdUseBoost, Grimoire",
-        "ItemName": "Daily Login XP Boost! (20 min)"
+        "Map": "doomvault",
+        "Room": "2222",
+        "Cell": "r5",
+        "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "LIGHTCASTER"
+        "Name": "VH"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
-        "ItemName": "level up",
-        "Quantity": "100"
+        "ItemName": "farm",
+        "ItemType": 1,
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
       }
     ]
   },
@@ -36,68 +31,103 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[LIGHTCASTER]",
+        "Text": "1: Ancestor's Flame",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Hydrophobia",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[AP]",
         "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Lingering Light",
+        "Text": "1: Commandment",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Light Blast",
+        "Text": "2: Hymn of Light",
         "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
+        "Text": "3: Righteous Seal",
+        "Index": "3"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Burned by Light",
+        "Text": "4: Sacred Magic: Eden",
         "Index": "4"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Lingering Light",
+        "Text": "1: Commandment",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Light Blast",
+        "Text": "1: Commandment",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[VH]",
+        "Type": 2
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Shackle",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Highlord's Gaze",
         "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Unshackle",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "4: Armageddon",
+        "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Shackle",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Highlord's Gaze",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Unshackle",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Shackle",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Highlord's Gaze",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Unshackle",
+        "Index": "3"
       }
     ]
   },
@@ -113,26 +143,33 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "Binky's Uni-horn",
+      "Vordred's Skull",
+      "Undead Energy"
+    ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1000,
-    "sName": "Twilly",
-    "sLang": "xx",
+    "iMax": 1500,
+    "sName": "Yorumi",
+    "sLang": "en",
     "iPort": 5588,
-    "sIP": "twilly.aqw.aq.com"
+    "sIP": "yorumi.aqw.aq.com"
   },
   "SkillDelay": 100,
+  "ExitCombatBeforeRest": true,
+  "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
+  "AutoRelogin": true,
   "RelogDelay": 5000,
-  "BotDelay": 10,
+  "RelogRetryUponFailure": true,
+  "BotDelay": 1000,
   "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "Untarget": true,
-  "HidePlayers": true,
-  "DisableAnimations": true,
+  "SkipCutscenes": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
@@ -140,11 +177,11 @@
   },
   "RestMp": 60,
   "RestHp": 60,
-  "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "Binky's Uni-horn"
+    ]
   },
-  "RelogUponQuestFailure": true,
-  "RelogUponItemBuyFailure": true
+  "DropDelay": 1000
 }

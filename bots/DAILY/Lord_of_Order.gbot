@@ -20186,7 +20186,9 @@
       "Lord of Order Blade",
       "Lord of Order Polearm",
       "Lord Of Order Armor",
-      "Safiria's Spirit Orb"
+      "Safiria's Spirit Orb",
+      "Mysterious Stranger Foiled",
+      "Calico Cobby Crushed"
     ]
   },
   "Server": {
@@ -20201,6 +20203,7 @@
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 500,

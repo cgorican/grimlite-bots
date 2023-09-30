@@ -5,55 +5,43 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "underlair",
+        "Map": "doom",
         "Room": "1",
-        "Cell": "r5",
-        "Pad": "Right"
+        "Cell": "Enter",
+        "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "ORACLE"
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "TransferFromBank": true,
+        "ItemName": "Gear of Doom"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "*",
-        "ItemName": "Level 55",
-        "Quantity": "*"
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is in inventory",
+        "Value1": "Gear of Doom",
+        "Value2": "3"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "3076"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 200
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 200
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
       }
     ]
   },
   "Skills": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Skill, Grimoire]], mscorlib",
-    "$values": [
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[ORACLE]",
-        "Type": 2
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Group Divination",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 100,
-        "SafeHp": true
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Foresight",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Foretell",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Edited Timeline",
-        "Index": "4"
-      }
-    ]
+    "$values": []
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
@@ -67,17 +55,7 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Bot By: Lotebi",
-      "Youtube.com/Lotebi",
-      "Discord.io/LOTEBI",
-      "l",
-      "Discord.io/LOTEBI",
-      "Discord.io/LOTEBI",
-      "Mystic Quills",
-      "Mystic Parchment",
-      "Mystic Shards"
-    ]
+    "$values": []
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
@@ -89,14 +67,14 @@
   },
   "SkillDelay": 500,
   "EnablePickup": true,
-  "EnableRejection": true,
+  "EnablePickupAll": true,
   "AutoRelogin": true,
   "RelogDelay": 6969,
-  "BotDelay": 100,
+  "BotDelay": 400,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "ProvokeMonsters": true,
   "Untarget": true,
+  "EnemyMagnet": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
   "WalkSpeed": 8,
@@ -109,11 +87,7 @@
   "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Youtube.com/Lotebi",
-      "discord.io/Lotebi",
-      "|"
-    ]
+    "$values": []
   },
   "RelogUponQuestFailure": true,
   "AFK": true,

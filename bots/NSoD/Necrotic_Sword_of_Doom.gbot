@@ -4,6 +4,14 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdBotDelay2, Grimoire",
+        "Delay": "750"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
+        "Name": "AP"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
         "Name": "CREATED BY MIND CELLS"
       },
@@ -1693,6 +1701,11 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[AP]",
+        "Type": 2
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
         "Text": "3: Unshackle",
         "Index": "3"
       },
@@ -1820,24 +1833,29 @@
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "sName": "Twilly",
-    "iPort": 5588
+    "iMax": 1500,
+    "sName": "Yorumi",
+    "sLang": "en",
+    "iPort": 5588,
+    "sIP": "yorumi.aqw.aq.com"
   },
   "SkillDelay": 1250,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "EnableRejection": true,
+  "AutoRelogin": true,
   "RelogDelay": 5000,
+  "RelogRetryUponFailure": true,
   "BotDelay": 1500,
-  "WaitForAllSkills": true,
-  "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "Untarget": true,
   "EnemyMagnet": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
-  "WalkSpeed": 8,
+  "DisableAnimations": true,
+  "WalkSpeed": 12,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
@@ -1848,5 +1866,6 @@
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
   },
+  "AFK": true,
   "DropDelay": 3000
 }

@@ -106,7 +106,7 @@
         "Tag": "Misc",
         "Text": "Set Variable",
         "Value1": "Room No.",
-        "Value2": "1e99"
+        "Value2": "2222"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdBlank3, Grimoire",
@@ -13819,6 +13819,7 @@
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 500,

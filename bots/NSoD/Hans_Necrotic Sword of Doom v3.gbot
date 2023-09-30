@@ -106,7 +106,7 @@
         "Tag": "Misc",
         "Text": "Set Variable",
         "Value1": "Room No.",
-        "Value2": "1e99"
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdBlank3, Grimoire",

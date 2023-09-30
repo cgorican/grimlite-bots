@@ -5,20 +5,22 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "underlair",
-        "Room": "1",
-        "Cell": "r5",
-        "Pad": "Right"
+        "Map": "doomkitten",
+        "Room": "2222",
+        "Cell": "Enter",
+        "Pad": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "ORACLE"
+        "Name": "SS"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "*",
-        "ItemName": "Level 55",
-        "Quantity": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "*"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdRest, Grimoire",
+        "Full": true
       }
     ]
   },
@@ -27,37 +29,36 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[ORACLE]",
+        "Text": "[SS]",
         "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Group Divination",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 100,
-        "SafeHp": true
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Foresight",
+        "Text": "1: Sanguine Pulse",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Foretell",
-        "Index": "3"
+        "Text": "2: Mirroring Arcane",
+        "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Edited Timeline",
+        "Text": "4: Crimson Ritual",
         "Index": "4"
       }
     ]
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.Quest, Grimoire",
+        "QuestID": 2091,
+        "Text": "2091",
+        "IsInProgress": true
+      }
+    ]
   },
   "Author": "Author",
   "Description": "Description (in Rich Text Format)",
@@ -68,54 +69,75 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Bot By: Lotebi",
-      "Youtube.com/Lotebi",
-      "Discord.io/LOTEBI",
-      "l",
-      "Discord.io/LOTEBI",
-      "Discord.io/LOTEBI",
-      "Mystic Quills",
-      "Mystic Parchment",
-      "Mystic Shards"
+      "Axe of the Prospector",
+      "Raw Ore",
+      "Barium",
+      "Void Aura",
+      "Astral Ephemerite Essence",
+      "Belrot the Fiend Essence",
+      "Black Knight Essence",
+      "Tiger Leech Essence",
+      "Carnax Essence",
+      "Chaos Vordred Essence",
+      "Dai Tengu Essence",
+      "Unending Avatar Essence",
+      "Void Dragon Essence",
+      "Creature Creation Essence",
+      "Blade Essence",
+      "Unenhanced Doom Blade",
+      "Bone Dust",
+      "Undead Essence",
+      "Undead Energy",
+      "Cavern Celestite",
+      "Primarch's Hilt",
+      "Chaorrupted Hourglass",
+      "(Necro) Scroll of Dark Arts",
+      "Doom Heart",
+      "Barium of Doom",
+      "Energized Blade",
+      "Necrotic Sword's Blade",
+      "Bones from the Void Realm",
+      "Unenhanced Hilt",
+      "Time Lord's Necronomicon",
+      "Energized Hilt",
+      "Aluminum"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "iMax": 1500,
-    "sName": "Artix",
-    "sLang": "it",
+    "sName": "Yorumi",
+    "sLang": "en",
     "iPort": 5588,
-    "sIP": "artix.aqw.aq.com"
+    "sIP": "yorumi.aqw.aq.com"
   },
-  "SkillDelay": 500,
+  "SkillDelay": 1250,
+  "ExitCombatBeforeRest": true,
+  "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "EnableRejection": true,
   "AutoRelogin": true,
-  "RelogDelay": 6969,
-  "BotDelay": 100,
+  "RelogDelay": 5000,
+  "RelogRetryUponFailure": true,
+  "BotDelay": 1500,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "ProvokeMonsters": true,
   "Untarget": true,
+  "EnemyMagnet": true,
+  "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
-  "WalkSpeed": 8,
+  "WalkSpeed": 12,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
   },
   "RestMp": 60,
   "RestHp": 60,
-  "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Youtube.com/Lotebi",
-      "discord.io/Lotebi",
-      "|"
-    ]
+    "$values": []
   },
-  "RelogUponQuestFailure": true,
   "AFK": true,
-  "DropDelay": 1000
+  "DropDelay": 3000
 }
