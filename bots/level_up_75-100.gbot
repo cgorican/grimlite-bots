@@ -41,63 +41,42 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
+        "Text": "[Safe] 2: Hymn of Light",
         "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
+        "Index": "2",
+        "SafePercentage": 80,
+        "SafeHp": true
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Lingering Light",
+        "Text": "1: Commandment",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Light Blast",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
+        "Text": "[Safe] 2: Hymn of Light",
         "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
+        "Index": "2",
+        "SafePercentage": 80,
+        "SafeHp": true
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Burned by Light",
+        "Text": "3: Righteous Seal",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[Safe] 2: Hymn of Light",
+        "Type": 1,
+        "Index": "2",
+        "SafePercentage": 80,
+        "SafeHp": true
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "4: Sacred Magic: Eden",
         "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 3: Illuminate",
-        "Type": 1,
-        "Index": "3",
-        "SafePercentage": 100
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Lingering Light",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Light Blast",
-        "Index": "2"
       }
     ]
   },
@@ -124,13 +103,16 @@
     "sIP": "twilly.aqw.aq.com"
   },
   "SkillDelay": 100,
+  "ExitCombatBeforeRest": true,
+  "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "RelogDelay": 5000,
   "BotDelay": 10,
-  "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "ProvokeMonsters": true,
   "Untarget": true,
+  "LagKiller": true,
   "HidePlayers": true,
   "DisableAnimations": true,
   "WalkSpeed": 8,

@@ -7029,8 +7029,8 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
     "$values": []
   },
-  "Author": "Lotebi",
-  "Description": "Youtube.com/Lotebi\r\nDiscord.io/Lotebi",
+  "Author": "Author",
+  "Description": "Description (in Rich Text Format)",
   "Boosts": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.InventoryItem, Grimoire]], mscorlib",
     "$values": []
@@ -7057,6 +7057,7 @@
   },
   "SkillDelay": 100,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 10,

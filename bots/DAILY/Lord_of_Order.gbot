@@ -20188,7 +20188,8 @@
       "Lord Of Order Armor",
       "Safiria's Spirit Orb",
       "Mysterious Stranger Foiled",
-      "Calico Cobby Crushed"
+      "Calico Cobby Crushed",
+      "Ice Katana"
     ]
   },
   "Server": {
@@ -20223,7 +20224,9 @@
   "RestHp": 60,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "Ice Katana"
+    ]
   },
   "UnbankOnStart": true,
   "RelogUponQuestFailure": true,

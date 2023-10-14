@@ -4,22 +4,43 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "8300"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "voidnightbane",
-        "Room": "2",
+        "Map": "championdrakath",
+        "Room": "1",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
       {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "r2",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+        "ItemName": "Scroll of Enrage"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdEquip, Grimoire",
+        "ItemName": "Lord of Order"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "SS"
+        "Name": "LOO"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "KILL"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMonsterHealthGreaterThan, Grimoire",
         "Tag": "Monster",
         "Text": "Monster's health is greater than",
-        "Value1": "*",
-        "Value2": "499990"
+        "Value1": "Champion Drakath",
+        "Value2": "19999999"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -27,7 +48,22 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "Monster": "Champion Drakath"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "yulgar",
+        "Room": "1",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "8300"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 400
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
@@ -38,7 +74,11 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 200
+        "Delay": 400
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "KILL"
       }
     ]
   },
@@ -47,7 +87,53 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[SS]",
+        "Text": "[LOO]",
+        "Type": 2
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Harmony",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Ordinance",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "5: Potions",
+        "Index": "5"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Axiom",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[Safe] 2: Ordinance",
+        "Type": 1,
+        "Index": "2",
+        "SafePercentage": 90,
+        "SafeHp": true
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "4: Blessing of Order",
+        "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[Safe] 2: Ordinance",
+        "Type": 1,
+        "Index": "2",
+        "SafePercentage": 90,
+        "SafeHp": true
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "[AP]",
         "Type": 2
       },
       {
@@ -57,11 +143,8 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Hymn of Light",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 90,
-        "SafeHp": true
+        "Text": "2: Hymn of Light",
+        "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
@@ -72,6 +155,11 @@
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
         "Text": "4: Sacred Magic: Eden",
         "Index": "4"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "5: Potions",
+        "Index": "5"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
@@ -87,23 +175,12 @@
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
         "Text": "1: Commandment",
         "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
       }
     ]
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
-    "$values": [
-      {
-        "$type": "Grimoire.Game.Data.Quest, Grimoire",
-        "QuestID": 2091,
-        "Text": "2091"
-      }
-    ]
+    "$values": []
   },
   "Author": "Author",
   "Description": "Description (in Rich Text Format)",
@@ -114,38 +191,7 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Axe of the Prospector",
-      "Raw Ore",
-      "Barium",
-      "Void Aura",
-      "Astral Ephemerite Essence",
-      "Belrot the Fiend Essence",
-      "Black Knight Essence",
-      "Tiger Leech Essence",
-      "Carnax Essence",
-      "Chaos Vordred Essence",
-      "Dai Tengu Essence",
-      "Unending Avatar Essence",
-      "Void Dragon Essence",
-      "Creature Creation Essence",
-      "Blade Essence",
-      "Unenhanced Doom Blade",
-      "Bone Dust",
-      "Undead Essence",
-      "Undead Energy",
-      "Cavern Celestite",
-      "Primarch's Hilt",
-      "Chaorrupted Hourglass",
-      "(Necro) Scroll of Dark Arts",
-      "Doom Heart",
-      "Barium of Doom",
-      "Energized Blade",
-      "Necrotic Sword's Blade",
-      "Bones from the Void Realm",
-      "Unenhanced Hilt",
-      "Time Lord's Necronomicon",
-      "Energized Hilt",
-      "Aluminum"
+      "Champion Drakath Insignia"
     ]
   },
   "Server": {
@@ -156,15 +202,14 @@
     "iPort": 5588,
     "sIP": "yorumi.aqw.aq.com"
   },
-  "SkillDelay": 1250,
+  "SkillDelay": 300,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
-  "RelogRetryUponFailure": true,
-  "BotDelay": 750,
+  "BotDelay": 500,
   "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
@@ -172,18 +217,22 @@
   "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
-  "WalkSpeed": 12,
+  "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
   },
+  "RestIfHp": true,
   "RestMp": 60,
-  "RestHp": 60,
-  "RestartUponDeath": true,
+  "RestHp": 80,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "Champion Drakath Insignia"
+    ]
   },
-  "AFK": true,
-  "DropDelay": 3000
+  "UnbankOnStart": true,
+  "RelogUponQuestFailure": true,
+  "RelogUponItemBuyFailure": true,
+  "AFK": true
 }

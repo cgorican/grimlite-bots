@@ -1071,27 +1071,6 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdUseSkill, Grimoire",
-        "Skill": "4: Cock",
-        "Index": "4",
-        "SafeHp": 100,
-        "SafeMp": 100
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdUseSkill, Grimoire",
-        "Skill": "3: Suck",
-        "Index": "3",
-        "SafeHp": 100,
-        "SafeMp": 100
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdUseSkill, Grimoire",
-        "Skill": "2: Fucking",
-        "Index": "2",
-        "SafeHp": 100,
-        "SafeMp": 100
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdUseSkill, Grimoire",
         "Skill": "1: Muscular",
         "Index": "1",
         "SafeHp": 100,
@@ -1106,8 +1085,15 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdUseSkill, Grimoire",
-        "Skill": "0: My",
-        "Index": "0",
+        "Skill": "3: Suck",
+        "Index": "3",
+        "SafeHp": 100,
+        "SafeMp": 100
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdUseSkill, Grimoire",
+        "Skill": "4: Cock",
+        "Index": "4",
         "SafeHp": 100,
         "SafeMp": 100
       },
@@ -1218,6 +1204,61 @@
         "Index": 2
       },
       {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "museum",
+        "Room": "1",
+        "Cell": "Crossroad",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "1129"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Pauldron Relic"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Breastplate Relic"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Vambrace Relic"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Gauntlet Relic"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Greaves Relic"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Armor of Awe"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Crossroad",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "632"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "632",
+        "ItemName": "Enchanted Armor of Awe"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
         "Message": "Quest Finalizada.\r\n\r\nQuest Finished.\r\nBot By: Lotebi"
       }
@@ -1231,8 +1272,8 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
     "$values": []
   },
-  "Author": "Lotebi",
-  "Description": "Youtube.com/Lotebi\r\nDiscord.io/Lotebi",
+  "Author": "Author",
+  "Description": "Description (in Rich Text Format)",
   "Boosts": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.InventoryItem, Grimoire]], mscorlib",
     "$values": [
@@ -1273,12 +1314,19 @@
       "Helm Shard",
       "Helm Fragment",
       "Cape Shard",
-      "Cape Fragment"
+      "Cape Fragment",
+      "Pauldron Relic",
+      "Breastplate Relic",
+      "Vambrace Relic",
+      "Gauntlet Relic",
+      "Greaves Relic",
+      "Armor of Awe",
+      "Enchanted Armor of Awe"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1200,
+    "iMax": 1500,
     "sName": "Artix",
     "sLang": "it",
     "iPort": 5588,
@@ -1289,11 +1337,10 @@
   "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 6969,
-  "BotDelay": 100,
+  "BotDelay": 200,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
-  "EnemyMagnet": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
   "WalkSpeed": 8,
@@ -1309,7 +1356,14 @@
     "$values": [
       "Youtube.com/Lotebi",
       "discord.io/Lotebi",
-      "|"
+      "|",
+      "Pauldron Relic",
+      "Breastplate Relic",
+      "Vambrace Relic",
+      "Gauntlet Relic",
+      "Greaves Relic",
+      "Armor of Awe",
+      "Enchanted Armor of Awe"
     ]
   },
   "RelogUponQuestFailure": true,

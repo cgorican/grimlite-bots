@@ -2971,7 +2971,7 @@
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1200,
+    "iMax": 1500,
     "sName": "Yorumi",
     "sLang": "en",
     "iPort": 5588,
@@ -2981,6 +2981,7 @@
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 500,

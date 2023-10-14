@@ -5,39 +5,27 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "terrarium-1e33",
+        "Map": "lostruinswar",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 1316
-        }
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r4",
+        "Cell": "r7",
         "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
-        "ItemName": "This Might Be A Token",
-        "Quantity": "2"
+        "ItemName": "Burning Blade",
+        "Quantity": "1"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "battleon",
+        "Room": "2",
         "Cell": "Enter",
         "Pad": "Spawn"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 1316
-        }
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
@@ -46,38 +34,7 @@
   },
   "Skills": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Skill, Grimoire]], mscorlib",
-    "$values": [
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
-        "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
-        "Index": "2"
-      }
-    ]
+    "$values": []
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
@@ -92,10 +49,8 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "This Is Definitely A Token",
-      "This Might Be A Token",
-      "This Could Be A Token",
-      "Token of Collection"
+      "Infernal Token",
+      "Burning Blade"
     ]
   },
   "Server": {
@@ -115,6 +70,9 @@
   "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "HidePlayers": true,
+  "SkipCutscenes": true,
+  "DisableAnimations": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",

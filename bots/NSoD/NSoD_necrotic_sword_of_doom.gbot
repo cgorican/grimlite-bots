@@ -1779,14 +1779,7 @@
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
-    "$values": [
-      {
-        "$type": "Grimoire.Game.Data.Quest, Grimoire",
-        "QuestID": 2091,
-        "Text": "2091",
-        "IsInProgress": true
-      }
-    ]
+    "$values": []
   },
   "Author": "Author",
   "Description": "Description (in Rich Text Format)",
@@ -1845,7 +1838,7 @@
   "EnablePickup": true,
   "EnableRejection": true,
   "AutoRelogin": true,
-  "RelogDelay": 5000,
+  "RelogDelay": 2000,
   "RelogRetryUponFailure": true,
   "BotDelay": 1500,
   "SkipDelayIndexIf": true,

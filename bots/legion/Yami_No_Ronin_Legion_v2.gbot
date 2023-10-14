@@ -106,7 +106,7 @@
         "Tag": "Misc",
         "Text": "Set Variable",
         "Value1": "Room No.",
-        "Value2": "1e99"
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdBlank3, Grimoire",
@@ -13705,7 +13705,14 @@
   },
   "Quests": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.Quest, Grimoire]], mscorlib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.Quest, Grimoire",
+        "QuestID": 6743,
+        "Text": "6743",
+        "IsInProgress": true
+      }
+    ]
   },
   "Author": "Author",
   "Description": "Description (in Rich Text Format)",
@@ -13715,22 +13722,25 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "Yami no Ronin"
+    ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1000,
-    "sName": "Twilly",
-    "sLang": "xx",
+    "iMax": 1500,
+    "sName": "Yorumi",
+    "sLang": "en",
     "iPort": 5588,
-    "sIP": "twilly.aqw.aq.com"
+    "sIP": "yorumi.aqw.aq.com"
   },
   "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "AutoRelogin": true,
-  "RelogDelay": 5000,
+  "RelogDelay": 2000,
+  "RelogRetryUponFailure": true,
   "BotDelay": 100,
   "WaitForSkill": true,
   "SkipDelayIndexIf": true,
@@ -13748,7 +13758,9 @@
   "RestHp": 60,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "Yami no Ronin"
+    ]
   },
   "UnbankOnStart": true,
   "RelogUponQuestFailure": true,
