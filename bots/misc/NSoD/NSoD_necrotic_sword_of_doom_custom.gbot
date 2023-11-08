@@ -233,12 +233,10 @@
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Astral Ephemerite Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -250,7 +248,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 42
+        "Index": 43
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -276,12 +274,10 @@
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Belrot the Fiend Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -319,12 +315,10 @@
         "Pad": "Down"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Black Knight Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -336,7 +330,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 60
+        "Index": 59
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -362,12 +356,10 @@
         "Pad": "Down"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Tiger Leech Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -379,7 +371,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 69
+        "Index": 67
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -405,12 +397,10 @@
         "Pad": "Right"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Carnax Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -422,7 +412,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 78
+        "Index": 75
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -448,12 +438,10 @@
         "Pad": "Down"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Chaos Vordred Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -465,7 +453,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 87
+        "Index": 83
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -491,12 +479,10 @@
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Dai Tengu Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -508,7 +494,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 96
+        "Index": 91
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -534,12 +520,10 @@
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Unending Avatar Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -551,7 +535,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 105
+        "Index": 99
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -577,12 +561,10 @@
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Void Dragon Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -594,7 +576,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 114
+        "Index": 107
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -620,12 +602,10 @@
         "Pad": "Down"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Creature Creation Essence",
+        "Quantity": "100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -637,7 +617,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 123
+        "Index": 115
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
@@ -645,7 +625,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "C"
+        "Name": "C"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
@@ -746,12 +726,10 @@
         "Name": "BONE DUST"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Bone Dust",
+        "Quantity": "5100"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -803,12 +781,10 @@
         "Name": "ENERGY"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Undead Energy",
+        "Quantity": "10000"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
@@ -1706,74 +1682,23 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Unshackle",
+        "Text": "1: Atramentous Shade",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Wicked Purgatory",
+        "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Depraved Empowerment",
         "Index": "3"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Armageddon",
+        "Text": "4: Anathema",
         "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Highlord's Gaze",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Highlord's Gaze",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Highlord's Gaze",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Fire in Your Skin",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Dark Fire",
-        "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Choking Shadow Smoke",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Combustion Blaze",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Choking Shadow Smoke",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Combustion Blaze",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[S] 3: Fire in Your Skin",
-        "Type": 1,
-        "Index": "3"
       }
     ]
   },
@@ -1826,13 +1751,13 @@
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1500,
-    "sName": "Yorumi",
-    "sLang": "en",
+    "iMax": 1000,
+    "sName": "Swordhaven (EU)",
+    "sLang": "it",
     "iPort": 5588,
-    "sIP": "yorumi.aqw.aq.com"
+    "sIP": "euro.aqw.artix.com"
   },
-  "SkillDelay": 1250,
+  "SkillDelay": 250,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
@@ -1845,6 +1770,7 @@
   "InfiniteAttackRange": true,
   "Untarget": true,
   "EnemyMagnet": true,
+  "LagKiller": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
