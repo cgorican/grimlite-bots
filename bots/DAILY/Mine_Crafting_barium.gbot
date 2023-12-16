@@ -8,20 +8,59 @@
         "Name": "SS"
       },
       {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotAvailable, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest is not available",
+        "Value1": "2091",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Done for today"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "2091"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "mountainpath",
+        "Room": "2222",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire",
         "Type": 1
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "REPEAT"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Axe of the Prospector",
+        "Quantity": "1"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Raw Ore",
+        "ItemType": 1,
+        "Quantity": "30"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "REPEAT"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
+        "Packet": "%xt%zm%tryQuestComplete%95123%2091%11932%false%1%wvz%\n",
+        "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Mine Crafting (daily) Done!"
       }
     ]
   },
@@ -52,36 +91,6 @@
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
         "Text": "4: Sacred Magic: Eden",
         "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Highlord's Gaze",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Unshackle",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Shackle",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Highlord's Gaze",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Unshackle",
-        "Index": "3"
       }
     ]
   },
@@ -97,7 +106,18 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "(Necro) Scroll of Dark Arts",
+      "Chaorrupted Hourglass",
+      "Axe of the Prospector",
+      "Aluminum",
+      "Barium",
+      "Gold",
+      "Iron",
+      "Copper",
+      "Silver",
+      "Platinum"
+    ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
@@ -107,20 +127,19 @@
     "iPort": 5588,
     "sIP": "socket3.aq.com"
   },
-  "SkillDelay": 127,
+  "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "RelogRetryUponFailure": true,
-  "BotDelay": 900,
+  "BotDelay": 750,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "ProvokeMonsters": true,
   "Untarget": true,
   "LagKiller": true,
-  "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
   "WalkSpeed": 12,
@@ -133,7 +152,19 @@
   "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "(Necro) Scroll of Dark Arts",
+      "Chaorrupted Hourglass",
+      "Axe of the Prospector",
+      "barium",
+      "Barium",
+      "Aluminum",
+      "Gold",
+      "Iron",
+      "Copper",
+      "Silver",
+      "Platinum"
+    ]
   },
   "AFK": true,
   "DropDelay": 3000

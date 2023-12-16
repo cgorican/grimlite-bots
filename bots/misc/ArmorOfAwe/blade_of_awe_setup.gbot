@@ -4,21 +4,67 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "underlair",
-        "Room": "1",
-        "Cell": "r5",
-        "Pad": "Right"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
+        "Name": "AP"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "ORACLE"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "FIND THE STONEWRIT"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "2933"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "creatures",
+        "Room": "2222",
+        "Cell": "Dragon",
+        "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
-        "ItemName": "Level 55",
-        "Quantity": "*"
+        "ItemName": "Stonewrit Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "2933"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "FIND THE HANDLE"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "2934"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "gilead",
+        "Room": "2222",
+        "Cell": "r4",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Handle Found!",
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "2934"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLoadBot, Grimoire",
+        "BotFileName": "blade_of_awe.gbot",
+        "BotFilePath": "Bots\\Bots\\misc\\ArmorOfAwe\\blade_of_awe.gbot"
       }
     ]
   },
@@ -27,12 +73,12 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[ORACLE]",
+        "Text": "[AP]",
         "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Foresight",
+        "Text": "1: Commandment",
         "Index": "1"
       },
       {
@@ -42,12 +88,12 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Foretell",
+        "Text": "3: Righteous Seal",
         "Index": "3"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Edited Timeline",
+        "Text": "4: Sacred Magic: Eden",
         "Index": "4"
       }
     ]
@@ -60,7 +106,20 @@
   "Description": "Description (in Rich Text Format)",
   "Boosts": {
     "$type": "System.Collections.Generic.List`1[[Grimoire.Game.Data.InventoryItem, Grimoire]], mscorlib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "Grimoire.Game.Data.InventoryItem, Grimoire",
+        "iQty": 3,
+        "sDesc": "Using this item will DOUBLE all reputation gained from completing quests and all other sources for 10 minutes of in-game play time. Does not expire while logged out.",
+        "iStk": 99,
+        "iLvl": 1,
+        "CharItemId": 2044054314,
+        "sLink": "repboost::10::false",
+        "sFile": "icbrep",
+        "ItemID": 8879,
+        "sName": "REPUTATION Boost! (10 min)"
+      }
+    ]
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
@@ -71,9 +130,11 @@
       "l",
       "Discord.io/LOTEBI",
       "Discord.io/LOTEBI",
-      "Mystic Quills",
-      "Mystic Parchment",
-      "Mystic Shards"
+      "Hilt Found!",
+      "Stonewrit Found!",
+      "Handle Found!",
+      "Legendary Stonewrit",
+      "Legendary Handle"
     ]
   },
   "Server": {
@@ -91,10 +152,9 @@
   "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 6969,
-  "BotDelay": 100,
+  "BotDelay": 500,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "ProvokeMonsters": true,
   "Untarget": true,
   "LagKiller": true,
   "SkipCutscenes": true,
@@ -112,7 +172,11 @@
     "$values": [
       "Youtube.com/Lotebi",
       "discord.io/Lotebi",
-      "|"
+      "|",
+      "Stonewrit Found!",
+      "Handle Found!",
+      "Legendary Stonewrit",
+      "Legendary Handle"
     ]
   },
   "RelogUponQuestFailure": true,

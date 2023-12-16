@@ -4,57 +4,61 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
-        "Tag": "Map",
-        "Text": "Map is not",
-        "Value1": "icestormunder",
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotAvailable, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest is not available",
+        "Value1": "1316",
         "Value2": ""
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "icestormunder",
-        "Room": "1",
-        "Cell": "r2",
-        "Pad": "Top"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
+        "Type": 2,
+        "Index": 8
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdCellIsNot, Grimoire",
-        "Tag": "Map",
-        "Text": "Cell is not",
-        "Value1": "r2",
-        "Value2": ""
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
+        "Map": "terrarium-1e33",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 1316
+        }
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r2",
-        "Pad": "Top"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Item.CmdUseBoost, Grimoire",
-        "ItemName": "Daily Login XP Boost! (20 min)"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "FS"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdWalk, Grimoire",
-        "X": "1",
-        "Y": "1",
-        "Type": "Random"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire",
-        "Type": 1
+        "Cell": "r4",
+        "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
         "Monster": "*",
-        "ItemName": "qaqwesdf",
-        "Quantity": "124"
+        "ItemName": "This Might Be A Token",
+        "Quantity": "2"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
+        "Quest": {
+          "$type": "Grimoire.Game.Data.Quest, Grimoire",
+          "QuestID": 1316
+        }
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLoadBot, Grimoire",
+        "BotFileName": "Chain_wheel_of_doom.gbot",
+        "BotFilePath": "Bots\\Bots\\daily\\Chain_wheel_of_doom.gbot"
       }
     ]
   },
@@ -63,13 +67,8 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[FS]",
-        "Type": 2
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
-        "Index": "2"
+        "Text": "4: Sacred Magic: Eden",
+        "Index": "4"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
@@ -83,8 +82,18 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
-        "Index": "4"
+        "Text": "3: Righteous Seal",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Commandment",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Hymn of Light",
+        "Index": "2"
       }
     ]
   },
@@ -100,7 +109,12 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "This Is Definitely A Token",
+      "This Might Be A Token",
+      "This Could Be A Token",
+      "Token of Collection"
+    ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
@@ -110,19 +124,16 @@
     "iPort": 5588,
     "sIP": "socket5.aq.com"
   },
-  "SkillDelay": 197,
+  "SkillDelay": 500,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "EnableRejection": true,
   "RelogDelay": 5000,
-  "BotDelay": 600,
+  "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "Untarget": true,
   "LagKiller": true,
-  "HidePlayers": true,
-  "DisableAnimations": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
@@ -134,7 +145,5 @@
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
-  },
-  "RelogUponQuestFailure": true,
-  "RelogUponItemBuyFailure": true
+  }
 }

@@ -2711,16 +2711,17 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Burning Blade of Azebeth"
+      "Burning Blade of Azebeth",
+      "Champion Sash"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
-    "iMax": 1200,
+    "iMax": 1500,
     "sName": "Yorumi",
     "sLang": "en",
     "iPort": 5588,
-    "sIP": "yorumi.aqw.aq.com"
+    "sIP": "socket3.aq.com"
   },
   "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
@@ -2733,8 +2734,9 @@
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
-  "HidePlayers": true,
+  "LagKiller": true,
   "SkipCutscenes": true,
+  "DisableAnimations": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
@@ -2745,7 +2747,8 @@
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Burning Blade of Azebeth"
+      "Burning Blade of Azebeth",
+      "Champion Sash"
     ]
   },
   "UnbankOnStart": true,

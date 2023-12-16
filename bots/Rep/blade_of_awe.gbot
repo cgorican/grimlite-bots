@@ -5,15 +5,7 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdBotDelay2, Grimoire",
-        "Delay": "1000"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdChange, Grimoire",
-        "Text": "TGBots"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdClientMessage, Grimoire",
-        "Messages": "Blade of Awe by TGBots. tgbotsaqw.blogspot.com"
+        "Delay": "666"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -24,7 +16,7 @@
         "Tag": "Misc",
         "Text": "Set Variable",
         "Value1": "Room No.",
-        "Value2": "1e99"
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -249,7 +241,8 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 2936
+          "QuestID": 2936,
+          "IsInProgress": true
         }
       },
       {
@@ -285,7 +278,8 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 2936
+          "QuestID": 2936,
+          "IsInProgress": true
         }
       },
       {
@@ -487,7 +481,7 @@
     "sName": "Twilly",
     "sLang": "xx",
     "iPort": 5588,
-    "sIP": "twilly.aqw.aq.com"
+    "sIP": "socket5.aq.com"
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,

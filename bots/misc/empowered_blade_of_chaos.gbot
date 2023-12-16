@@ -4,97 +4,65 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "SS"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "CHECK"
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInBank, Grimoire",
         "Tag": "Item",
         "Text": "Is in bank",
-        "Value1": "Helm of Awe",
-        "Value2": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "STOP"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
-        "Tag": "Item",
-        "Text": "Is in inventory",
-        "Value1": "Helm of Awe",
-        "Value2": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "STOP"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInBank, Grimoire",
-        "Tag": "Item",
-        "Text": "Is in bank",
-        "Value1": "Armor of Awe Pass",
+        "Value1": "Empowered Blade of Chaos",
         "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
         "TransferFromBank": true,
-        "ItemName": "Armor of Awe Pass"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
-        "Tag": "Item",
-        "Text": "Is not in inventory",
-        "Value1": "Armor of Awe Pass",
-        "Value2": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "PASS"
+        "ItemName": "Empowered Blade of Chaos"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
         "Tag": "Item",
         "Text": "Is in inventory",
-        "Value1": "Helm Relic",
+        "Value1": "Empowered Blade of Chaos",
         "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "BUY"
+        "Label": "STOP"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInBank, Grimoire",
+        "Tag": "Item",
+        "Text": "Is in bank",
+        "Value1": "Blade of Chaos",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBankTransfer, Grimoire",
+        "TransferFromBank": true,
+        "ItemName": "Blade of Chaos"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
         "Tag": "Item",
         "Text": "Is in inventory",
-        "Value1": "Helm Fragment",
-        "Value2": "10"
+        "Value1": "Blade of Chaos",
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "BUY"
+        "Label": "UPGRADE"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "FARM"
+        "Name": "BLADE"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
         "Tag": "Map",
         "Text": "Map is not",
-        "Value1": "doomvaultb",
+        "Value1": "ultradrakath",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "doomvaultb",
+        "Map": "ultradrakath",
         "Room": "1",
         "Cell": "Enter",
         "Pad": "Spawn"
@@ -103,97 +71,72 @@
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdCellIsNot, Grimoire",
         "Tag": "Map",
         "Text": "Cell is not",
-        "Value1": "r26",
+        "Value1": "r1",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r26",
+        "Cell": "r1",
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
-        "QuestID": "4177"
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "Undead Raxgore",
-        "ItemName": "Helm Shard",
-        "Quantity": "5"
+        "Monster": "*",
+        "ItemName": "Blade of Chaos",
+        "Quantity": "1"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
-        "QuestID": "4177"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "UPGRADE"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 500
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdFactionRankLessThan, Grimoire",
+        "Tag": "This player",
+        "Text": "Faction Rank is less than",
+        "Value1": "Chaos Militia",
+        "Value2": "10"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "CHAOS MILITIA REP"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
         "Tag": "Item",
         "Text": "Is not in inventory",
-        "Value1": "Helm Fragment",
-        "Value2": "10"
+        "Value1": "Champion Drakath Insignia",
+        "Value2": "5"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "FARM"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "BUY"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Missing Champion Drakath Insignia!"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
         "Tag": "Map",
         "Text": "Map is not",
-        "Value1": "museum",
+        "Value1": "championdrakath",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "museum",
+        "Map": "championdrakath",
         "Room": "1",
         "Cell": "Enter",
-        "Pad": "Spawn"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdCellIsNot, Grimoire",
-        "Tag": "Map",
-        "Text": "Cell is not",
-        "Value1": "Crossroad",
-        "Value2": ""
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "Crossroad",
         "Pad": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
-        "ShopId": "1129"
+        "ShopId": "2055"
       },
       {
         "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
-        "ShopId": "1129",
-        "ItemName": "Helm Relic"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
-        "ShopId": "1129",
-        "ItemName": "Helm of Awe"
+        "ShopId": "2055",
+        "ItemName": "Empowered Blade of Chaos"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
         "Name": "STOP"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
-        "Tag": "Map",
-        "Text": "Map is not",
-        "Value1": "yulgar",
-        "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
@@ -204,50 +147,75 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
-        "Message": "Helm of Awe complete!"
+        "Message": "Empowered Blade of Chaos achieved!"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "PASS"
+        "Name": "CHAOS MILITIA REP"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
         "Tag": "Map",
         "Text": "Map is not",
-        "Value1": "museum",
+        "Value1": "citadel",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "museum",
+        "Map": "citadel",
         "Room": "1",
-        "Cell": "Crossroad",
-        "Pad": "Spawn"
+        "Cell": "m1",
+        "Pad": "Up"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdCellIsNot, Grimoire",
         "Tag": "Map",
         "Text": "Cell is not",
-        "Value1": "Crossroad",
+        "Value1": "m1",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "Crossroad",
-        "Pad": "Spawn"
+        "Cell": "m1",
+        "Pad": "Up"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
-        "ShopId": "1130"
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "5775"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
-        "ShopId": "1130",
-        "ItemName": "Armor of Awe Pass"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire",
+        "Type": 1
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Inquisitor's Tabard",
+        "ItemType": 1,
+        "Quantity": "10"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "5775",
+        "ItemID": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdFactionRankLessThan, Grimoire",
+        "Tag": "This player",
+        "Text": "Faction Rank is less than",
+        "Value1": "Chaos Militia",
+        "Value2": "10"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "CHECK"
+        "Label": "CHAOS MILITIA REP"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "UPGRADE"
       }
     ]
   },
@@ -256,21 +224,8 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[SS]",
-        "Type": 2
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[Safe] 2: Hymn of Light",
-        "Type": 1,
-        "Index": "2",
-        "SafePercentage": 90,
-        "SafeHp": true
+        "Text": "4: Sacred Magic: Eden",
+        "Index": "4"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
@@ -279,8 +234,23 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
-        "Index": "4"
+        "Text": "1: Commandment",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Righteous Seal",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "1: Commandment",
+        "Index": "1"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "2: Hymn of Light",
+        "Index": "2"
       }
     ]
   },
@@ -297,11 +267,9 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Helm Fragment",
-      "Helm Relic",
-      "Helm of Awe",
-      "Helm Shard",
-      "Armor of Awe Pass"
+      "Blade of Chaos",
+      "Champion Drakath Insignia",
+      "Empowered Blade of Chaos"
     ]
   },
   "Server": {
@@ -312,18 +280,16 @@
     "iPort": 5588,
     "sIP": "socket3.aq.com"
   },
-  "SkillDelay": 120,
+  "SkillDelay": 500,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
-  "RelogRetryUponFailure": true,
   "BotDelay": 800,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "Untarget": true,
   "LagKiller": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
@@ -339,14 +305,10 @@
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Helm Fragment",
-      "Helm Relic",
-      "Helm of Awe",
-      "Helm Shard",
-      "Armor of Awe Pass"
+      "Blade of Chaos",
+      "Champion Drakath Insignia",
+      "Empowered Blade of Chaos"
     ]
   },
-  "RelogUponQuestFailure": true,
-  "RelogUponItemBuyFailure": true,
   "AFK": true
 }

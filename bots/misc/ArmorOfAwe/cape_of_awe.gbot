@@ -24,7 +24,7 @@
         "Tag": "Misc",
         "Text": "Set Variable",
         "Value1": "Room No.",
-        "Value2": "1e99"
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -35,6 +35,17 @@
         "Tag": "Item",
         "Text": "Is in inventory",
         "Value1": "Cape of Awe",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "ENC"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is in inventory",
+        "Value1": "Enchanted Cape of Awe",
         "Value2": "1"
       },
       {
@@ -67,6 +78,13 @@
         "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
         "Packet": "%xt%zm%loadShop%26490%1130%\n",
         "Delay": 1500
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Armor of Awe Pass",
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
@@ -115,8 +133,10 @@
         "Name": "Kill"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "Binky",
+        "ItemName": "Cape Shard",
+        "Quantity": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotCompleted, Grimoire",
@@ -146,39 +166,61 @@
         "QuestID": "4180"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
-        "Packet": "%xt%zm%loadShop%26851%1129%\n",
-        "Delay": 1500
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "1129"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
-        "Packet": "%xt%zm%buyItem%27315%29401%1129%3275%1%",
-        "Delay": 1500
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Cape Relic"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1129",
+        "ItemName": "Cape of Awe"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "ENC"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
+        "Tag": "Map",
+        "Text": "Map is not",
+        "Value1": "museum",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "museum",
+        "Room": "1",
+        "Cell": "Crossroad",
+        "Pad": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r1",
-        "Pad": "Left"
+        "Cell": "Crossroad",
+        "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
-        "Packet": "%xt%zm%loadShop%26851%1129%\n",
-        "Delay": 1500
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "632"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
-        "Packet": "%xt%zm%buyItem%27315%29375%1129%3277%1%\n",
-        "Delay": 1500
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "632",
+        "ItemName": "Enchanted Cape of Awe"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
-        "Tag": "Item",
-        "Text": "Is not in inventory",
-        "Value1": "Cape of Awe",
-        "Value2": "1"
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "yulgar",
+        "Room": "1",
+        "Cell": "Enter",
+        "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLogout, Grimoire"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Enchanted Cape of Awe done!"
       }
     ]
   },
@@ -226,7 +268,10 @@
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
       "Cape Fragment",
-      "Cape Shard"
+      "Cape Shard",
+      "Cape Relic",
+      "Cape of Awe",
+      "Enchanted Cape of Awe"
     ]
   },
   "Server": {
@@ -235,16 +280,18 @@
     "sName": "Twilly",
     "sLang": "xx",
     "iPort": 5588,
-    "sIP": "twilly.aqw.aq.com"
+    "sIP": "socket5.aq.com"
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "LagKiller": true,
   "SkipCutscenes": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
@@ -257,7 +304,10 @@
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Cape Fragment"
+      "Cape Fragment",
+      "Cape Relic",
+      "Cape of Awe",
+      "Enchanted Cape of Awe"
     ]
   },
   "DropDelay": 500

@@ -184,36 +184,6 @@
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
         "Text": "4: Blessing of Order",
         "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Harmony",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Axiom",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Ordinance",
-        "Index": "2"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Harmony",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Blessing of Order",
-        "Index": "4"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Axiom",
-        "Index": "3"
       }
     ]
   },
@@ -241,7 +211,7 @@
     "iPort": 5588,
     "sIP": "socket3.aq.com"
   },
-  "SkillDelay": 262,
+  "SkillDelay": 101,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
@@ -249,7 +219,6 @@
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 500,
-  "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,

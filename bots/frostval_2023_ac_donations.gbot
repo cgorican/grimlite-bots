@@ -4,8 +4,9 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "terrarium-1e33",
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "battleon",
+        "Room": "1e99",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -13,43 +14,39 @@
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotAvailable, Grimoire",
         "Tag": "Quest",
         "Text": "Quest is not available",
-        "Value1": "1316",
+        "Value1": "9493",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdIndex, Grimoire",
         "Type": 2,
-        "Index": 8
+        "Index": 7
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 1316
-        }
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "9493"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r4",
-        "Pad": "Left"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "*",
-        "ItemName": "This Might Be A Token",
-        "Quantity": "2"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "battleontown",
+        "Room": "1",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
-        "Quest": {
-          "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 1316
-        }
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "Frogzard",
+        "ItemName": "Reminder Delivered",
+        "ItemType": 1,
+        "Quantity": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "9493"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 500
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
@@ -61,33 +58,28 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Sacred Magic: Eden",
-        "Index": "4"
+        "Text": "[AP]",
+        "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
+        "Text": "1: Atramentous Shade",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Righteous Seal",
-        "Index": "3"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Hymn of Light",
+        "Text": "2: Wicked Purgatory",
         "Index": "2"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "3: Depraved Empowerment",
+        "Index": "3"
+      },
+      {
+        "$type": "Grimoire.Game.Data.Skill, Grimoire",
+        "Text": "4: Anathema",
+        "Index": "4"
       }
     ]
   },
@@ -104,39 +96,76 @@
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "This Is Definitely A Token",
-      "This Might Be A Token",
-      "This Could Be A Token",
-      "Token of Collection"
+      "Axe of the Prospector",
+      "Raw Ore",
+      "Barium",
+      "Void Aura",
+      "Astral Ephemerite Essence",
+      "Belrot the Fiend Essence",
+      "Black Knight Essence",
+      "Tiger Leech Essence",
+      "Carnax Essence",
+      "Chaos Vordred Essence",
+      "Dai Tengu Essence",
+      "Unending Avatar Essence",
+      "Void Dragon Essence",
+      "Creature Creation Essence",
+      "Blade Essence",
+      "Unenhanced Doom Blade",
+      "Bone Dust",
+      "Undead Essence",
+      "Undead Energy",
+      "Cavern Celestite",
+      "Primarch's Hilt",
+      "Chaorrupted Hourglass",
+      "(Necro) Scroll of Dark Arts",
+      "Doom Heart",
+      "Barium of Doom",
+      "Energized Blade",
+      "Necrotic Sword's Blade",
+      "Bones from the Void Realm",
+      "Unenhanced Hilt",
+      "Time Lord's Necronomicon",
+      "Energized Hilt",
+      "Aluminum"
     ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "iMax": 1000,
-    "sName": "Twilly",
-    "sLang": "xx",
+    "sName": "Swordhaven (EU)",
+    "sLang": "it",
     "iPort": 5588,
-    "sIP": "socket5.aq.com"
+    "sIP": "euro.aqw.artix.com"
   },
-  "SkillDelay": 500,
+  "SkillDelay": 250,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
   "EnableRejection": true,
-  "RelogDelay": 5000,
-  "BotDelay": 1000,
+  "AutoRelogin": true,
+  "RelogDelay": 2000,
+  "RelogRetryUponFailure": true,
+  "BotDelay": 750,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "WalkSpeed": 8,
+  "Untarget": true,
+  "EnemyMagnet": true,
+  "LagKiller": true,
+  "HidePlayers": true,
+  "SkipCutscenes": true,
+  "DisableAnimations": true,
+  "WalkSpeed": 12,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
   },
   "RestMp": 60,
   "RestHp": 60,
-  "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
-  }
+  },
+  "AFK": true,
+  "DropDelay": 3000
 }

@@ -163,11 +163,6 @@
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Commandment",
-        "Index": "1"
-      },
-      {
-        "$type": "Grimoire.Game.Data.Skill, Grimoire",
         "Text": "4: Sacred Magic: Eden",
         "Index": "4"
       },
@@ -227,7 +222,7 @@
     "iPort": 5588,
     "sIP": "socket3.aq.com"
   },
-  "SkillDelay": 280,
+  "SkillDelay": 211,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
@@ -235,7 +230,6 @@
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "BotDelay": 500,
-  "WaitForSkill": true,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
