@@ -58,7 +58,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLoadBot, Grimoire",
         "BotFileName": "Chain_wheel_of_doom.gbot",
-        "BotFilePath": "Bots\\Bots\\daily\\Chain_wheel_of_doom.gbot"
+        "BotFilePath": "Bots\\bots\\DAILY\\Chain_wheel_of_doom.gbot"
       }
     ]
   },

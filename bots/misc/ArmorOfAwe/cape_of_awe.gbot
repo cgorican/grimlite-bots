@@ -8,10 +8,6 @@
         "Delay": "1000"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdChange, Grimoire",
-        "Text": "TGBots"
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdClientMessage, Grimoire",
         "Messages": "Cape of Awe  by TGBots. tgbotsaqw.blogspot.com"
       },
@@ -68,6 +64,17 @@
         "Name": "Armor of Awe Pass"
       },
       {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is in inventory",
+        "Value1": "Armor of Awe Pass",
+        "Value2": "1"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "CAPE OF AWE QUEST"
+      },
+      {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
         "Map": "museum",
         "Room": "[Room No.]",
@@ -75,31 +82,13 @@
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
-        "Packet": "%xt%zm%loadShop%26490%1130%\n",
-        "Delay": 1500
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "1130"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
-        "Tag": "Item",
-        "Text": "Is not in inventory",
-        "Value1": "Armor of Awe Pass",
-        "Value2": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdPacket2, Grimoire",
-        "Packet": "%xt%zm%buyItem%26490%29404%1130%18579%1%",
-        "Delay": 1500
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
-        "Tag": "Item",
-        "Text": "Is not in inventory",
-        "Value1": "Armor of Awe Pass",
-        "Value2": "1"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLogout, Grimoire"
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1130",
+        "ItemName": "Armor of Awe Pass"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -277,10 +266,10 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "iMax": 1000,
-    "sName": "Twilly",
-    "sLang": "xx",
+    "sName": "Swordhaven (EU)",
+    "sLang": "it",
     "iPort": 5588,
-    "sIP": "socket5.aq.com"
+    "sIP": "euro.aqw.artix.com"
   },
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
@@ -291,6 +280,7 @@
   "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "ProvokeMonsters": true,
   "LagKiller": true,
   "SkipCutscenes": true,
   "WalkSpeed": 8,

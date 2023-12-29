@@ -9865,14 +9865,14 @@
         "Tag": "Misc",
         "Text": "Update Variable",
         "Value1": "Cell1",
-        "Value2": "r2"
+        "Value2": "r6"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdUpdateVar, Grimoire",
         "Tag": "Misc",
         "Text": "Update Variable",
         "Value1": "Cell2",
-        "Value2": "Bottom"
+        "Value2": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdUpdateVar, Grimoire",
@@ -20189,7 +20189,8 @@
       "Safiria's Spirit Orb",
       "Mysterious Stranger Foiled",
       "Calico Cobby Crushed",
-      "Ice Katana"
+      "Ice Katana",
+      "Perfect Pyritium"
     ]
   },
   "Server": {
@@ -20198,7 +20199,7 @@
     "sName": "Twilly",
     "sLang": "xx",
     "iPort": 5588,
-    "sIP": "twilly.aqw.aq.com"
+    "sIP": "socket5.aq.com"
   },
   "SkillDelay": 100,
   "ExitCombatBeforeRest": true,
@@ -20212,6 +20213,7 @@
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
+  "LagKiller": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
@@ -20225,7 +20227,8 @@
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": [
-      "Ice Katana"
+      "Ice Katana",
+      "Perfect Pyritium"
     ]
   },
   "UnbankOnStart": true,

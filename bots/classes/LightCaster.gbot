@@ -5,7 +5,7 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdBotDelay, Grimoire",
-        "Delay": 333
+        "Delay": 777
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -31,7 +31,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lostruins-1e33",
+        "Map": "lostruins-2222",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -39,7 +39,8 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 4510
+          "QuestID": 4510,
+          "IsInProgress": true
         }
       },
       {
@@ -96,7 +97,8 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 4510
+          "QuestID": 4510,
+          "IsInProgress": true
         }
       },
       {
@@ -116,7 +118,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lostruins-1e33",
+        "Map": "lostruins-2222",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -201,7 +203,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lostruinswar-1e33",
+        "Map": "lostruinswar-2222",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -274,7 +276,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lostruinswar-1e33",
+        "Map": "lostruinswar-1",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
@@ -372,7 +374,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
         "Map": "dragonrune",
-        "Room": "1",
+        "Room": "2222",
         "Cell": "r8",
         "Pad": "Left"
       },
@@ -543,7 +545,7 @@
     "sName": "Artix",
     "sLang": "it",
     "iPort": 5588,
-    "sIP": "artix.aqw.aq.com"
+    "sIP": "socket.aq.com"
   },
   "SkillDelay": 819,
   "ExitCombatBeforeRest": true,
@@ -555,6 +557,8 @@
   "BotDelay": 200,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "ProvokeMonsters": true,
+  "LagKiller": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,

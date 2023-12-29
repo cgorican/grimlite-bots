@@ -184,7 +184,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 12000
+        "Delay": 10000
       }
     ]
   },
@@ -253,7 +253,7 @@
   "EnableRejection": true,
   "RelogDelay": 10000,
   "RelogRetryUponFailure": true,
-  "BotDelay": 500,
+  "BotDelay": 750,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "LagKiller": true,

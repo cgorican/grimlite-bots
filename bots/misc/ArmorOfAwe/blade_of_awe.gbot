@@ -16,7 +16,7 @@
         "Tag": "Misc",
         "Text": "Set Variable",
         "Value1": "Room No.",
-        "Value2": "1e99"
+        "Value2": "1"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -194,7 +194,8 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 2935
+          "QuestID": 2935,
+          "IsInProgress": true
         }
       },
       {
@@ -230,7 +231,8 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 2935
+          "QuestID": 2935,
+          "IsInProgress": true
         }
       },
       {
@@ -241,8 +243,7 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 2936,
-          "IsInProgress": true
+          "QuestID": 2936
         }
       },
       {
@@ -278,8 +279,7 @@
         "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest, Grimoire",
         "Quest": {
           "$type": "Grimoire.Game.Data.Quest, Grimoire",
-          "QuestID": 2936,
-          "IsInProgress": true
+          "QuestID": 2936
         }
       },
       {
@@ -295,14 +295,14 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "talkypalooza",
+        "Map": "escherion",
         "Room": "[Room No.]",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "Act11",
+        "Cell": "Boss",
         "Pad": "Left"
       },
       {
@@ -354,18 +354,15 @@
         "Delay": 1500
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLogout, Grimoire"
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
         "Name": "Blade of Awe Rep"
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "castleundead",
+        "Map": "graveyard",
         "Room": "[Room No.]",
-        "Cell": "Enter",
-        "Pad": "Spawn"
+        "Cell": "Top",
+        "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
@@ -373,8 +370,8 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "Bright",
-        "Pad": "Right"
+        "Cell": "Top",
+        "Pad": "Left"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -478,11 +475,12 @@
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "iMax": 1000,
-    "sName": "Twilly",
-    "sLang": "xx",
+    "sName": "Swordhaven (EU)",
+    "sLang": "it",
     "iPort": 5588,
-    "sIP": "socket5.aq.com"
+    "sIP": "euro.aqw.artix.com"
   },
+  "SkillDelay": 200,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
@@ -492,7 +490,11 @@
   "BotDelay": 1000,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
+  "ProvokeMonsters": true,
   "LagKiller": true,
+  "HidePlayers": true,
+  "SkipCutscenes": true,
+  "DisableAnimations": true,
   "WalkSpeed": 8,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",

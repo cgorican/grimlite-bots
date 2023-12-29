@@ -5,101 +5,105 @@
     "$values": [
       {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "SS"
+        "Name": "SPAM"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdSetFPS, Grimoire",
-        "FPS": 20
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdSetVar, Grimoire",
-        "Tag": "Misc",
-        "Text": "Set Variable",
-        "Value1": "target",
-        "Value2": "chrt0"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "REPEAT"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 500
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerIsInMyCell, Grimoire",
-        "Tag": "Player",
-        "Text": "Player is in my cell",
-        "Value1": "[target]",
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotAvailable, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest is not available",
+        "Value1": "492",
         "Value2": ""
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "KILL"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Daily quest unavailable!"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "GOTO"
+        "Name": "DAILY"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire"
+        "$type": "Grimoire.Botting.Commands.Quest.CmdAcceptQuest2, Grimoire",
+        "QuestID": "492"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerInRoom, Grimoire",
-        "Tag": "Player",
-        "Text": "Player is in room",
-        "Value1": "[target]",
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdQuestNotInProgress, Grimoire",
+        "Tag": "Quest",
+        "Text": "Quest is not in progress",
+        "Value1": "492",
+        "Value2": ""
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "You need to be a member, lil bro!"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdMapIsNot, Grimoire",
+        "Tag": "Map",
+        "Text": "Map is not",
+        "Value1": "bludrut4",
         "Value2": ""
       },
       {
         "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
-        "Map": "battleon",
-        "Room": "1e99",
+        "Map": "bludrut4",
+        "Room": "1",
         "Cell": "Enter",
         "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 500
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
+        "Monster": "*",
+        "ItemName": "Shadow Scales",
+        "ItemType": 1,
+        "Quantity": "5"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoPlayer, Grimoire",
-        "PlayerName": "[target]"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 500
+        "$type": "Grimoire.Botting.Commands.Quest.CmdCompleteQuest2, Grimoire",
+        "QuestID": "492"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
-        "Name": "KILL"
+        "Name": "ELIGIBLE"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayerNotInCombat, Grimoire",
-        "Tag": "Player",
-        "Text": "Player is not in combat",
-        "Value1": "[target]",
-        "Value2": ""
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdNotInInventory, Grimoire",
+        "Tag": "Item",
+        "Text": "Is not in inventory",
+        "Value1": "Shadow Skull",
+        "Value2": "30"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "REPEAT"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStopBotWithMessage, Grimoire",
+        "Message": "Daily quest unavailable!"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdToggleProvoke, Grimoire",
-        "Type": 1
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "FINISH"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
-        "Monster": "*"
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "bonecastle",
+        "Room": "1",
+        "Cell": "Enter",
+        "Pad": "Spawn"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 1000
+        "$type": "Grimoire.Botting.Commands.Item.CmdLoad2, Grimoire",
+        "ShopId": "1242"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
-        "Label": "REPEAT"
+        "$type": "Grimoire.Botting.Commands.Item.CmdBuy2, Grimoire",
+        "ShopId": "1242",
+        "ItemName": "DeathKnight Lord"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "Enter",
+        "Pad": "Spawn"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
       }
     ]
   },
@@ -108,7 +112,7 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[SS]",
+        "Text": "[SPAM]",
         "Type": 2
       },
       {
@@ -145,7 +149,10 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "DeathKnight Lord",
+      "Shadow Skull"
+    ]
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
@@ -159,10 +166,11 @@
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
+  "EnableRejection": true,
   "AutoRelogin": true,
   "RelogDelay": 5000,
   "RelogRetryUponFailure": true,
-  "BotDelay": 1100,
+  "BotDelay": 900,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,
@@ -180,7 +188,10 @@
   "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": []
+    "$values": [
+      "DeathKnight Lord",
+      "Shadow Skull"
+    ]
   },
   "AFK": true,
   "DropDelay": 3000

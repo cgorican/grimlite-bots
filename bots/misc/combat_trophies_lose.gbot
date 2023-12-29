@@ -54,10 +54,10 @@
         "Delay": 1000
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdItemNotPickupable, Grimoire",
-        "Tag": "Item",
-        "Text": "Has not dropped",
-        "Value1": "Combat Trophy",
+        "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdPlayersGreaterThan, Grimoire",
+        "Tag": "Player",
+        "Text": "Count is greater than",
+        "Value1": "1",
         "Value2": ""
       },
       {
@@ -73,7 +73,7 @@
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
-        "Delay": 22000
+        "Delay": 18000
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
@@ -216,7 +216,7 @@
   "EnableRejection": true,
   "RelogDelay": 10000,
   "RelogRetryUponFailure": true,
-  "BotDelay": 500,
+  "BotDelay": 750,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "LagKiller": true,

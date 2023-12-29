@@ -49,7 +49,7 @@
       {
         "$type": "Grimoire.Botting.Commands.Misc.CmdLoadBot, Grimoire",
         "BotFileName": "NSoD_necrotic_sword_of_doom_custom.gbot",
-        "BotFilePath": "Bots\\Bots\\misc\\NSoD\\NSoD_necrotic_sword_of_doom_custom.gbot"
+        "BotFilePath": "Bots\\bots\\misc\\NSoD\\NSoD_necrotic_sword_of_doom_custom.gbot"
       }
     ]
   },
@@ -84,7 +84,7 @@
   "EnablePickupAll": true,
   "AutoRelogin": true,
   "RelogDelay": 6969,
-  "BotDelay": 400,
+  "BotDelay": 800,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
   "Untarget": true,

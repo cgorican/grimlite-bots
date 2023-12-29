@@ -4,32 +4,36 @@
     "$type": "System.Collections.Generic.List`1[[Grimoire.Botting.IBotCommand, Grimoire]], mscorlib",
     "$values": [
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdBotDelay, Grimoire",
-        "Delay": 777
-      },
-      {
         "$type": "Grimoire.Botting.Commands.Combat.CmdSkillSet, Grimoire",
-        "Name": "SMASH"
+        "Name": "SS"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Map.CmdJoin, Grimoire",
-        "Map": "lostruinswar-1",
-        "Cell": "Enter",
-        "Pad": "Spawn"
-      },
-      {
-        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
-        "Cell": "r7",
+        "$type": "Grimoire.Botting.Commands.Map.CmdJoin2, Grimoire",
+        "Map": "doomvault",
+        "Room": "1",
+        "Cell": "r5",
         "Pad": "Left"
       },
       {
-        "$type": "Grimoire.Botting.Commands.Combat.CmdKillFor, Grimoire",
-        "Monster": "Diabolical Warlord",
-        "ItemName": "Burning Blade",
-        "Quantity": "1"
+        "$type": "Grimoire.Botting.Commands.Misc.CmdDelay, Grimoire",
+        "Delay": 500
       },
       {
-        "$type": "Grimoire.Botting.Commands.Misc.CmdStop, Grimoire"
+        "$type": "Grimoire.Botting.Commands.Map.CmdMoveToCell, Grimoire",
+        "Cell": "r5",
+        "Pad": "Left"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdLabel, Grimoire",
+        "Name": "REPEAT"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Combat.CmdKill, Grimoire",
+        "Monster": "Binky"
+      },
+      {
+        "$type": "Grimoire.Botting.Commands.Misc.CmdGotoLabel, Grimoire",
+        "Label": "REPEAT"
       }
     ]
   },
@@ -38,27 +42,27 @@
     "$values": [
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "[SMASH]",
+        "Text": "[SS]",
         "Type": 2
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "1: Sanguine Pulse",
+        "Text": "1: Commandment",
         "Index": "1"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "2: Mirroring Arcane",
+        "Text": "2: Hymn of Light",
         "Index": "2"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "3: Malevolence",
+        "Text": "3: Righteous Seal",
         "Index": "3"
       },
       {
         "$type": "Grimoire.Game.Data.Skill, Grimoire",
-        "Text": "4: Crimson Ritual",
+        "Text": "4: Sacred Magic: Eden",
         "Index": "4"
       }
     ]
@@ -75,58 +79,42 @@
   },
   "Drops": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Guardian of Spirits' Blade",
-      "Avatar Of Death's Scythe",
-      "Lance of Time",
-      "Burning Blade",
-      "Burning Blade of Abezeth",
-      "Trapped Spirits",
-      "LightCaster",
-      "Aranx's Pure Light",
-      "Energy of Death",
-      "Captured Time",
-      "Champion Sash",
-      "Gold Voucher 500k"
-    ]
+    "$values": []
   },
   "Server": {
     "$type": "Grimoire.Game.Data.Server, Grimoire",
     "iMax": 1500,
-    "sName": "Artix",
-    "sLang": "it",
+    "sName": "Yorumi",
+    "sLang": "en",
     "iPort": 5588,
-    "sIP": "socket.aq.com"
+    "sIP": "socket3.aq.com"
   },
-  "SkillDelay": 179,
+  "SkillDelay": 166,
   "ExitCombatBeforeRest": true,
   "ExitCombatBeforeQuest": true,
   "EnablePickup": true,
-  "EnableRejection": true,
+  "AutoRelogin": true,
   "RelogDelay": 5000,
   "RelogRetryUponFailure": true,
-  "BotDelay": 200,
+  "BotDelay": 900,
   "SkipDelayIndexIf": true,
   "InfiniteAttackRange": true,
-  "LagKiller": true,
+  "Untarget": true,
   "HidePlayers": true,
   "SkipCutscenes": true,
   "DisableAnimations": true,
-  "WalkSpeed": 8,
+  "WalkSpeed": 12,
   "NotifyUponDrop": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
     "$values": []
   },
-  "RestIfMp": true,
-  "RestIfHp": true,
-  "RestMp": 55,
-  "RestHp": 79,
+  "RestMp": 60,
+  "RestHp": 60,
   "RestartUponDeath": true,
   "Items": {
     "$type": "System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib",
-    "$values": [
-      "Champion Sash",
-      "Gold Voucher 500k"
-    ]
-  }
+    "$values": []
+  },
+  "AFK": true,
+  "DropDelay": 3000
 }

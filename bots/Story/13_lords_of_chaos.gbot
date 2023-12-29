@@ -8055,14 +8055,14 @@
         "Tag": "Misc",
         "Text": "Update Variable",
         "Value1": "Cell1",
-        "Value2": "r1"
+        "Value2": "Enter"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdUpdateVar, Grimoire",
         "Tag": "Misc",
         "Text": "Update Variable",
         "Value1": "Cell2",
-        "Value2": "Left"
+        "Value2": "Spawn"
       },
       {
         "$type": "Grimoire.Botting.Commands.Misc.Statements.CmdUpdateVar, Grimoire",
